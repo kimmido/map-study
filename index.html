@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지도 연습</title>
+    <script type = "text/javascript" src = "https://sgisapi.kostat.go.kr/OpenAPI3/auth/javascriptAuth?consumer_key=4b3e8b91302746109af2"></script>
+</head>
+<body>
+    <div id="map" style="width:500px; height:500px;"></div>
+
+    <script type="text/javascript">
+        var map = sop.map('map'); //지도 출력할 엘리먼트 id
+        map.setView(sop.utmk(953820, 1953437), 9); // 센터좌표(위도, 경도), 줌레벨 -utmk: 좌표계
+    </script>
+</body>
+</html>
